@@ -1,0 +1,5 @@
+<div class="content">
+    <app-place-list [places]='(places | placeFilter:searchPlace)' (place)='onSelectPlace($event)' class="places-list"></app-place-list>
+    <app-place-detail [place]='selectedPlace' class="places-details"></app-place-detail>
+    <app-place-search (search)='onSearchPlace($event)' class='places-search'></app-place-search>
+</div>

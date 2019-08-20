@@ -1,0 +1,21 @@
+.content {
+    display: grid;
+    grid-template-areas:
+        'search search'
+        'list details';
+}
+
+.places-list {
+    grid-area: list;
+    width: 50vw;
+}
+
+.places-details {
+    grid-area: details;
+    width: 50vw;
+}
+
+.places-search {
+    grid-area: search;
+}
+

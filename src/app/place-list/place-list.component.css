@@ -1,0 +1,18 @@
+li {
+    margin-top: 1rem;
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+}
+
+span {
+    font-size: medium;
+}
+
+.selected-place {
+    list-style-type: circle;
+    text-decoration: underline;
+}
