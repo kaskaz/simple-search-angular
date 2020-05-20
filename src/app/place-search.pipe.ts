@@ -8,7 +8,12 @@ export class PlaceSearchPipe implements PipeTransform {
 
   transform(value: Place[], term?: string): Place[] {
     return (term && term.length > 0) ?
-      value.filter(place => place.name.toLowerCase().includes(term.toLowerCase())) : value;
+      value.filter(place => this.match(place, term)) : value;
+  }
+
+  match(place: Place, term: string) {
+    return place.name.toLowerCase().includes(term.toLowerCase()) 
+      || place.location.toLowerCase().includes(term.toLowerCase());
   }
 
 }
